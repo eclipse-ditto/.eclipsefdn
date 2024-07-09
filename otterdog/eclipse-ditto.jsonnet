@@ -3,10 +3,7 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-ditto') {
   settings+: {
     description: "",
-    members_can_change_project_visibility: false,
     name: "Eclipse Ditto™",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
@@ -36,8 +33,6 @@ orgs.newOrg('eclipse-ditto') {
       has_discussions: true,
       has_wiki: false,
       homepage: "https://eclipse.dev/ditto/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "akka",
         "digital-shadow",
@@ -92,8 +87,6 @@ orgs.newOrg('eclipse-ditto') {
       description: "Eclipse Ditto™: Digital Twin framework - Client SDKs for Java and JavaScript",
       has_wiki: false,
       homepage: "https://eclipse.org/ditto",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "client-sdks",
         "ditto-clients",
@@ -128,8 +121,6 @@ orgs.newOrg('eclipse-ditto') {
       delete_branch_on_merge: false,
       description: "Eclipse Ditto™: Digital Twin framework - Client SDK for Golang",
       homepage: "https://eclipse.org/ditto/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "client-sdk",
         "eclipse-ditto",
@@ -148,8 +139,6 @@ orgs.newOrg('eclipse-ditto') {
       delete_branch_on_merge: false,
       description: "Eclipse Ditto™: Digital Twin framework - Client SDK for Python",
       homepage: "https://eclipse.org/ditto/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "client-sdk",
         "eclipse-ditto",
@@ -174,8 +163,6 @@ orgs.newOrg('eclipse-ditto') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://eclipse.org/ditto",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse-ditto",
         "examples",
@@ -210,8 +197,6 @@ orgs.newOrg('eclipse-ditto') {
       delete_branch_on_merge: false,
       description: "Eclipse Ditto™: Digital Twin framework - Static website",
       homepage: "https://eclipse.org/ditto/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
