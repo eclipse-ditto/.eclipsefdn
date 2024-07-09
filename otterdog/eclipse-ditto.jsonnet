@@ -202,5 +202,7 @@ orgs.newOrg('eclipse-ditto') {
         enabled: false,
       },
     },
+    orgs.newRepo('ditto-wot-tooling') {
+    }
   ],
 }
