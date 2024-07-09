@@ -183,8 +183,6 @@ orgs.newOrg('eclipse-ditto') {
       description: "Eclipse Ditto™: Digital Twin framework - Testing repository",
       has_wiki: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
