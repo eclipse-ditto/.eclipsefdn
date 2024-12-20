@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-ditto') {
+orgs.newOrg('iot.ditto', 'eclipse-ditto') {
   settings+: {
     description: "",
     name: "Eclipse Ditto™",
