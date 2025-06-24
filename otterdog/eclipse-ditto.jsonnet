@@ -34,7 +34,6 @@ orgs.newOrg('iot.ditto', 'eclipse-ditto') {
       has_wiki: false,
       homepage: "https://eclipse.dev/ditto/",
       topics+: [
-        "akka",
         "digital-shadow",
         "digital-twin",
         "digital-twins",
