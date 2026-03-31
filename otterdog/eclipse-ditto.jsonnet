@@ -70,7 +70,7 @@ orgs.newOrg('iot.ditto', 'eclipse-ditto') {
       ],
       secrets: [
         orgs.newRepoSecret('DOCKER_HUB_TOKEN') {
-          value: "********",
+          value: "pass:bots/iot.ditto/dockerhub/api-token",
         },
       ],
       environments: [
