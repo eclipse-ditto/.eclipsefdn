@@ -63,6 +63,25 @@ orgs.newOrg('iot.ditto', 'eclipse-ditto') {
         orgs.newEnvironment('github-pages'),
       ],
     },
+    orgs.newRepo('ditto-benchmark-tool') {
+      allow_merge_commit: true,
+      allow_rebase_merge: false,
+      default_branch: "main",
+      delete_branch_on_merge: false,
+      dependabot_security_updates_enabled: true,
+      description: "Eclipse Ditto™: Digital Twin framework - Benchmark tool",
+      has_wiki: false,
+      homepage: "https://eclipse.dev/ditto/",
+      topics+: [
+        "benchmark",
+        "eclipse-ditto",
+        "nodejs"
+      ],
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('ditto-clients') {
       allow_merge_commit: true,
       allow_rebase_merge: false,
@@ -147,6 +166,26 @@ orgs.newOrg('iot.ditto', 'eclipse-ditto') {
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
+    },
+    orgs.newRepo('ditto-mcp') {
+      allow_merge_commit: true,
+      allow_rebase_merge: false,
+      default_branch: "main",
+      delete_branch_on_merge: false,
+      dependabot_security_updates_enabled: true,
+      description: "Eclipse Ditto™: Digital Twin framework - Model Context Protocol (MCP) server",
+      has_wiki: false,
+      homepage: "https://eclipse.dev/ditto/",
+      topics+: [
+        "eclipse-ditto",
+        "mcp",
+        "model-context-protocol",
+        "nodejs"
+      ],
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('ditto-testing') {
       allow_merge_commit: true,
