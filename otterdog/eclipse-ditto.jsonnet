@@ -54,20 +54,6 @@ orgs.newOrg('iot.ditto', 'eclipse-ditto') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://notify.travis-ci.org') {
-          events+: [
-            "create",
-            "delete",
-            "issue_comment",
-            "member",
-            "public",
-            "pull_request",
-            "push",
-            "repository"
-          ],
-        },
-      ],
       secrets: [
         orgs.newRepoSecret('DOCKER_HUB_TOKEN') {
           value: "pass:bots/iot.ditto/dockerhub/api-token",
@@ -98,20 +84,6 @@ orgs.newOrg('iot.ditto', 'eclipse-ditto') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://notify.travis-ci.org') {
-          events+: [
-            "create",
-            "delete",
-            "issue_comment",
-            "member",
-            "public",
-            "pull_request",
-            "push",
-            "repository"
-          ],
-        },
-      ],
     },
     orgs.newRepo('ditto-clients-golang') {
       allow_merge_commit: true,
