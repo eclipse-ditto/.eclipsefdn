@@ -211,7 +211,31 @@ orgs.newOrg('iot.ditto', 'eclipse-ditto') {
       },
     },
     orgs.newRepo('ditto-wot-tooling') {
-    }
+    },
+    orgs.newRepo('dittoctl') {
+      allow_merge_commit: true,
+      allow_rebase_merge: false,
+      default_branch: "main",
+      delete_branch_on_merge: false,
+      dependabot_security_updates_enabled: true,
+      description: "Eclipse Ditto™: Digital Twin framework - Command line tool (dittoctl)",
+      has_wiki: false,
+      homepage: "https://eclipse.dev/ditto/",
+      topics+: [
+        "cli",
+        "digital-twin",
+        "eclipse-ditto",
+        "iot",
+        "python"
+      ],
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      environments: [
+        orgs.newEnvironment('pypi'),
+      ],
+    },
   ],
 } + {
   # snippet added due to 'https://github.com/EclipseFdn/otterdog-configs/blob/main/blueprints/add-dot-github-repo.yml'
